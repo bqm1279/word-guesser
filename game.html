@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-box">
+            <div class="player">
+                <span class="player-name">Player 1: John</span>
+                <span class="player-score">Score: 0</span>
+                <span class="player-guesses">Past guesses: A, E, I</span>
+            </div>
+            <div class="player">
+                <span class="player-name">Player 2: Mary</span>
+                <span class="player-score">Score: 0</span>
+                <span class="player-guesses">Past guesses: O, U</span>
+            </div>
+        </div>
+        <div class="game-table">
+            <div class="hint">Hint: It's a type of fruit</div>
+            <div class="word">_ _ _ _ _ _</div>
+        </div>
+        <div class="controls">
+            <input id="input" type="text" maxlength="1" placeholder="Guess a letter...">
+            <button id="submit">Submit</button>
+            <div id="timer">Time left: 60 seconds</div>
+            <div id="scores">Your score: 0, Opponent's score: 0</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
